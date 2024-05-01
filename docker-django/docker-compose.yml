@@ -14,16 +14,16 @@ services:
 
 
   mysql:
-    image: mysql
-    environment:
-      MYSQL_DATABASE: 'itsv'
-      MYSQL_USER: 'itsv'
-      MYSQL_PASSWORD: 'itsv'
-      MYSQL_ROOT_PASSWORD: 'itsv'
-    container_name: mysql
-    volumes:
-    - ./dbdata:/var/lib/mysql
-    networks:
+      image: mysql
+      environment:
+        MYSQL_DATABASE: 'itsv'
+        MYSQL_USER: 'itsv'
+        MYSQL_PASSWORD: 'itsv'
+        MYSQL_ROOT_PASSWORD: 'itsv'
+      container_name: mysql
+      volumes:
+      - ./dbdata:/var/lib/mysql
+      networks:
       - itsv
     
   phpmyadmin:
